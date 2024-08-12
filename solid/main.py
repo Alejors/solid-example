@@ -1,4 +1,4 @@
-from usecases.shipping import Shipping
+from services.shipping import Shipping
 from entities.package import Package
 from factory.saver_factory import PackageSaverFactory
 from strategies.package_mailer import PackageFileMailer
