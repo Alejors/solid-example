@@ -1,6 +1,3 @@
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 from strategies.package_saver import PackageSaver
 from entities.package import Package
 from factory.saver_factory import PackageSaverFactory

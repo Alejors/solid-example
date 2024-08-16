@@ -2,6 +2,10 @@
 
 This is a simple project which intents to explain the advantages of coding using SOLID principles.
 
+The project itself reflects a delivery company which should handle shipping and return services. For this example only the Shipping service will be implemented.
+
+The service should be able to receive packages, store them, list them and print them out to a file.
+
 ## Not SOLID
 
 Inside the not-solid directory there is a simple script which works, *not-solid.py*. Has a single class which saves packages (which is expected to have an ID and a destination, eventhough it could have anything since there is no Package class describing this object) then lists them and saves them to a file.
@@ -19,6 +23,8 @@ You would expect to see the print to console of both packages, and a new file wo
 On the other hand, the SOLID directory *main.py* file does the same, but applying every principle.
 
 ### Services
+
+There is a base class called transaction. This holds common methods of all transaction classes (shippings and returns). Which should be implemented or could be accesible from transactions.
 
 Shipping class is a service which is only responsible for Adding and Listing packages. Through the implementation of a strategy it can Save its packages to a file.
 
